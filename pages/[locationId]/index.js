@@ -29,7 +29,7 @@ export async function getStaticPaths() {
   const locations = await locationCollection.find({}, { _id: 1 }).toArray(); // .find() gives access to all the locations
   client.close();
   return {
-    fallback: true,
+    fallback: "blocking",
     paths: locations.map((location) => ({
       params: { locationId: location._id.toString() },
     })),
