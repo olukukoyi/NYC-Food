@@ -26,34 +26,33 @@ function Form(props) {
   }
 
   return (
-    <Card>
-      <form className={classes.form} onSubmit={handleSubmit}>
-        <div className={classes.control}>
-          <label htmlFor="title">Location </label>
-          <input type="text" required id="title" ref={locationInput} />
-        </div>
-        <div className={classes.control}>
-          <label htmlFor="image">Location Image</label>
-          <input type="url" required id="image" ref={imageInput} />
-        </div>
-        <div className={classes.control}>
-          <label htmlFor="address">Address</label>
-          <input type="text" required id="address" ref={addressInput} />
-        </div>
-        <div className={classes.control}>
-          <label htmlFor="description">Locations Description</label>
-          <textarea
-            id="description"
-            required
-            rows="5"
-            ref={descriptionInput}
-          ></textarea>
-        </div>
-        <div className={classes.actions}>
-          <button onClick={handleSubmit}>Add Meetup</button>
-        </div>
-      </form>
-    </Card>
+    <form className={classes.form} onSubmit={handleSubmit}>
+      <h1>Add a Location</h1>
+      <div className={classes.control}>
+        <label htmlFor="title">Location </label>
+        <input type="text" required id="title" ref={locationInput} />
+      </div>
+      <div className={classes.control}>
+        <label htmlFor="image">Location Image</label>
+        <input type="url" required id="image" ref={imageInput} />
+      </div>
+      <div className={classes.control}>
+        <label htmlFor="address">Address</label>
+        <input type="text" required id="address" ref={addressInput} />
+      </div>
+      <div className={classes.control}>
+        <label htmlFor="description">Locations Description</label>
+        <textarea
+          id="description"
+          required
+          rows="5"
+          ref={descriptionInput}
+        ></textarea>
+      </div>
+      <div className={classes.actions}>
+        <button onClick={handleSubmit}>Add Location</button>
+      </div>
+    </form>
   );
 }
 

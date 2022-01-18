@@ -1,0 +1,33 @@
+.details {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details__image img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.details__content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.details__content h2 {
+  padding-bottom: 2rem;
+}
+
+.details__content address {
+  padding-bottom: 2rem;
+}
+.details__content p {
+  font-size: 18px;
+}

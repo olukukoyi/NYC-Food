@@ -3,12 +3,16 @@ import classes from "./LocationDetails.module.css";
 
 function LocationDetails(props) {
   return (
-    <Card>
-      <img src={props.image} alt="" />
-      <h2>{props.title}</h2>
-      <address>{props.address}</address>
-      <h3>{props.description}</h3>
-    </Card>
+    <div className={classes.details}>
+      <div className={classes.details__image}>
+        <img src={props.image} alt="" />
+      </div>
+      <div className={classes.details__content}>
+        <h2>{props.title}</h2>
+        <address>{props.address}</address>
+        <p>{props.description}</p>
+      </div>
+    </div>
   );
 }
 
