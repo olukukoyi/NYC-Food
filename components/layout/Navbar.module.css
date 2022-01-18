@@ -1,0 +1,27 @@
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 1.9rem;
+  height: 6.2rem;
+  background-color: black;
+}
+.nav__container > h1 {
+  cursor: pointer;
+}
+
+.nav__links__container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__links__container li {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  transition: all 300ms ease;
+}
+
+.nav__links__container li:hover {
+  transform: scale(1.2);
+}
