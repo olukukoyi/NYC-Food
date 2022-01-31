@@ -8,11 +8,22 @@
 }
 
 .showcase__button {
+  cursor: pointer;
   width: 100px;
-  background-color: #064420;
+  background-color: #92a9bd;
+  color: rgb(255, 255, 255);
+  padding: 0.65rem 1.5rem;
+  border-radius: 99px;
   text-decoration: none;
   margin-left: 3rem;
-  color: inherit;
+  border: 2px solid #92a9bd;
+  transition: all 300ms ease;
+  font-size: 1rem;
+}
+
+.showcase__button:hover {
+  color: #92a9bd;
+  background-color: rgb(255, 255, 255);
 }
 
 .showcase__container {

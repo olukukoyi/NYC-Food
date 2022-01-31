@@ -7,6 +7,20 @@ body {
   overflow-x: hidden;
 }
 
+/* html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+div {
+  height: 100%;
+  width: 100%;
+} */
+
 a {
   color: inherit;
   text-decoration: none;
