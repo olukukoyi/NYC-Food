@@ -1,8 +1,15 @@
 import { useRouter } from "next/router";
+import { useState } from "react";
 import Form from "../../components/ui/Form";
+import { auth } from "../../Firebase";
+import SignIn from "../../components/layout/SignIn";
 
 function FormPage() {
+  const [signIn, setSignedIn] = useState();
   const router = useRouter();
+  auth.onAuthStateChanged((user) => {
+    setSignedIn(user);
+  });
 
   async function handleMeetup(meetup) {
     const response = await fetch("/api/new-location", {
@@ -19,7 +26,8 @@ function FormPage() {
   }
   return (
     <div>
-      <Form addMeetup={handleMeetup} />
+      {signIn ? <Form addMeetup={handleMeetup} /> : <SignIn />}
+      {/* <Form addMeetup={handleMeetup} /> */}
     </div>
   );
 }

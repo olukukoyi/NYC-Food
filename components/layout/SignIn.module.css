@@ -1,0 +1,15 @@
+.boxx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 5%;
+}
+
+.underL {
+  cursor: pointer;
+  transition: all 110ms ease;
+}
+.underL:hover {
+  opacity: 0.5;
+}

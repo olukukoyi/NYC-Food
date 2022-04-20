@@ -1,11 +1,12 @@
 .nav__container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 1.9rem;
-  height: 6.2rem;
-  background-color: #678983;
+  padding: 2.1rem;
+  height: 4rem;
+  /* background-color: #678983; */
 }
 .nav__container > h1 {
   cursor: pointer;
@@ -13,12 +14,14 @@
 
 .nav__links__container ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
 }
 
 .nav__links__container li {
   font-size: 1.4rem;
-  margin-left: 3rem;
+  margin-left: 4rem;
   transition: all 100ms ease;
 }
 
